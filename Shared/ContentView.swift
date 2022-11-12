@@ -28,8 +28,9 @@ struct ContentView: View {
                     .foregroundColor(.secondary)
                 Divider()
                 Text("About Turtle Rock")
-                    .font(.title2)
+                    .font(.callout)
                 Text("Descriptive text goes here.")
+                    .font(.caption)
             }.padding()
             Spacer()
         }
