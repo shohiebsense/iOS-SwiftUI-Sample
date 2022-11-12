@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123308F7291F3F860092A3F7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123308F6291F3F860092A3F7 /* CircleImage.swift */; };
+		123308F9291F416D0092A3F7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123308F8291F416D0092A3F7 /* MapView.swift */; };
 		12D5A4AE2906998E0097DA58 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5A4AD2906998E0097DA58 /* Tests_iOS.swift */; };
 		12D5A4B02906998E0097DA58 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5A4AF2906998E0097DA58 /* Tests_iOSLaunchTests.swift */; };
 		12D5A4BA2906998E0097DA58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5A4B92906998E0097DA58 /* Tests_macOS.swift */; };
@@ -37,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123308F6291F3F860092A3F7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		123308F8291F416D0092A3F7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		12D5A4952906998D0097DA58 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		12D5A4962906998D0097DA58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12D5A4972906998E0097DA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		12D5A49C2906998E0097DA58 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D5A49C2906998E0097DA58 /* iOS SwiftUI Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS SwiftUI Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D5A4A22906998E0097DA58 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D5A4A42906998E0097DA58 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		12D5A4A92906998E0097DA58 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 		12D5A4942906998D0097DA58 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				123308F6291F3F860092A3F7 /* CircleImage.swift */,
+				123308F8291F416D0092A3F7 /* MapView.swift */,
 				12D5A4952906998D0097DA58 /* SampleApp.swift */,
 				12D5A4962906998D0097DA58 /* ContentView.swift */,
 				12D5A4972906998E0097DA58 /* Assets.xcassets */,
@@ -107,7 +113,7 @@
 		12D5A49D2906998E0097DA58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12D5A49C2906998E0097DA58 /* Sample.app */,
+				12D5A49C2906998E0097DA58 /* iOS SwiftUI Sample.app */,
 				12D5A4A22906998E0097DA58 /* Sample.app */,
 				12D5A4A92906998E0097DA58 /* Tests iOS.xctest */,
 				12D5A4B52906998E0097DA58 /* Tests macOS.xctest */,
@@ -158,7 +164,7 @@
 			);
 			name = "Sample (iOS)";
 			productName = "Sample (iOS)";
-			productReference = 12D5A49C2906998E0097DA58 /* Sample.app */;
+			productReference = 12D5A49C2906998E0097DA58 /* iOS SwiftUI Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		12D5A4A12906998E0097DA58 /* Sample (macOS) */ = {
@@ -300,7 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				12D5A4BF2906998E0097DA58 /* ContentView.swift in Sources */,
+				123308F9291F416D0092A3F7 /* MapView.swift in Sources */,
 				12D5A4BD2906998E0097DA58 /* SampleApp.swift in Sources */,
+				123308F7291F3F860092A3F7 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +485,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shohiebsense.Sample;
-				PRODUCT_NAME = Sample;
+				PRODUCT_NAME = "iOS SwiftUI Sample";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -506,7 +514,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shohiebsense.Sample;
-				PRODUCT_NAME = Sample;
+				PRODUCT_NAME = "iOS SwiftUI Sample";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
