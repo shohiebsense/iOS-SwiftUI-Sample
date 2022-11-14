@@ -9,30 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            MapView()
-                .frame(height: 300)
-                .ignoresSafeArea(edges: .top)
-            CircleImage()
-                .offset(y: -120)
-                .padding(.bottom, -165)
-            VStack(alignment: .leading) {
-                Text("Hello, You!")
-                    .font(.title)
-                    .foregroundColor(.blue)
-                HStack {
-                    Text("Shohiebsense")
-                    Spacer()
-                    Text("Bandung")
-                }.font(.subheadline)
-                    .foregroundColor(.secondary)
-                Divider()
-                Text("About Turtle Rock")
-                    .font(.callout)
-                Text("Descriptive text goes here.")
-                    .font(.caption)
-            }.padding()
-            Spacer()
+        TabView {
+            HomeTabView()
+                .tabItem {
+                    Label("Home", systemImage: "person")
+                }
+            
+            StoryTabView()
+                .tabItem{
+                    Label("Story", systemImage: "book")
+                }
+            
+            FavoritesTabView()
+                .tabItem{
+                    Label("Favorites", systemImage: "star")
+                }
+            
+            FunFactsTabView()
+                .tabItem {
+                    Label("Fun Facts", systemImage: "hand.thumbsup")
+                }
         }
     }
 }
