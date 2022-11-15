@@ -21,6 +21,7 @@
 		12D5A4C02906998E0097DA58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5A4962906998D0097DA58 /* ContentView.swift */; };
 		12D5A4C12906998E0097DA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D5A4972906998E0097DA58 /* Assets.xcassets */; };
 		12D5A4C22906998E0097DA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D5A4972906998E0097DA58 /* Assets.xcassets */; };
+		12E9AED02923739700BADBAE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9AECF2923739700BADBAE /* FavoriteButton.swift */; };
 		12F80DDF292335E5004441DA /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 12F80DDE292335E5004441DA /* landmarkData.json */; };
 		12F80DE229233615004441DA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F80DE129233615004441DA /* Landmark.swift */; };
 		12F80DE429233874004441DA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F80DE329233873004441DA /* ModelData.swift */; };
@@ -61,6 +62,7 @@
 		12D5A4B52906998E0097DA58 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D5A4B92906998E0097DA58 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		12D5A4BB2906998E0097DA58 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		12E9AECF2923739700BADBAE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		12F80DDE292335E5004441DA /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		12F80DE129233615004441DA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		12F80DE329233873004441DA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -159,6 +161,26 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		12E9AED12923747600BADBAE /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				12F80DE729233B3B004441DA /* LandmarkRow.swift */,
+				124C4D72292357A8003DA417 /* LandmarkList.swift */,
+				124C4D7429235897003DA417 /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		12E9AED22923748E00BADBAE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				123308F6291F3F860092A3F7 /* CircleImage.swift */,
+				123308F8291F416D0092A3F7 /* MapView.swift */,
+				12E9AECF2923739700BADBAE /* FavoriteButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		12F80DDD292334B0004441DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,12 +201,9 @@
 		12F80DE629233A76004441DA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				123308F6291F3F860092A3F7 /* CircleImage.swift */,
-				123308F8291F416D0092A3F7 /* MapView.swift */,
 				12D5A4962906998D0097DA58 /* ContentView.swift */,
-				12F80DE729233B3B004441DA /* LandmarkRow.swift */,
-				124C4D72292357A8003DA417 /* LandmarkList.swift */,
-				124C4D7429235897003DA417 /* LandmarkDetail.swift */,
+				12E9AED22923748E00BADBAE /* Components */,
+				12E9AED12923747600BADBAE /* Landmarks */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +370,7 @@
 				12D5A4BF2906998E0097DA58 /* ContentView.swift in Sources */,
 				123308F9291F416D0092A3F7 /* MapView.swift in Sources */,
 				12D5A4BD2906998E0097DA58 /* SampleApp.swift in Sources */,
+				12E9AED02923739700BADBAE /* FavoriteButton.swift in Sources */,
 				124C4D73292357A8003DA417 /* LandmarkList.swift in Sources */,
 				124C4D7529235897003DA417 /* LandmarkDetail.swift in Sources */,
 				123308F7291F3F860092A3F7 /* CircleImage.swift in Sources */,
