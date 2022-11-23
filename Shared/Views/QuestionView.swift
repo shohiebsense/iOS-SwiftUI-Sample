@@ -2,7 +2,7 @@
 //  QuestionView.swift
 //  Sample (iOS)
 //
-//  Created by Nasruddin, Shohieb | LIPD on 2022/11/23.
+//  Created by Shohieb Nasruddin on 2022/11/23.
 //
 
 import SwiftUI
