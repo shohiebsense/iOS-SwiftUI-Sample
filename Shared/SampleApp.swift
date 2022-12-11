@@ -14,6 +14,7 @@ struct SampleApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(modelData)
+            
         }
     }
 }

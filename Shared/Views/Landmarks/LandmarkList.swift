@@ -10,6 +10,17 @@ import SwiftUI
 struct LandmarkList: View {
     @EnvironmentObject var modelData : ModelData
     @State private var isShowingFavoritesOnly = false
+    @State private var progressAmount = 0.0
+    
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    
+    
+    let eggTimes = ["Soft": 3, "Medium": 4, "Hard": 7]
+    var totalTime = 0
+    var secondsPassed = 0
+    
+    
+    
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
@@ -18,24 +29,15 @@ struct LandmarkList: View {
     }
     
     var body: some View {
-        NavigationView {
-            List{
-                Toggle(isOn: $isShowingFavoritesOnly) {
-                    Text("Favorites Only")
+        VStack {
+            ProgressView("Progress", value: progressAmount,
+                         total: 100)
+            .onReceive(timer) {_ in
+                if progressAmount < 100 {
+                    progressAmount += 2
                 }
-                ForEach(filteredLandmarks) { landmark in
-                NavigationLink {
-
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
-                }
-                
             }
-            .navigationTitle("Landmarks")
         }
-        }
-        
     }
 }
 
